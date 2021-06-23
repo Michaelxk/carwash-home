@@ -1,14 +1,14 @@
-import Footer from '@/components/Footer';
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-  </div> 
-
+    <Login />
+  </div>
 </template>
 <script>
+import Login from "@/views/Login";
+
 // @ is an alias to /src
 export default {
   name: "Home",
-  components: {}
+  components: { Login }
 };
 </script>

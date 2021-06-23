@@ -1,32 +1,20 @@
 <template>
-  <v-bottom-navigation
-
-    color="orange darken-4"
-    grow
-  >
-    <v-btn>
-      <span>Inicio</span>
-
-      <v-icon>mdi-home</v-icon>
-    </v-btn>
-
-    <v-btn>
-      <span>Favorites</span>
-
-      <v-icon>mdi-heart</v-icon>
-    </v-btn>
-
-    <v-btn>
-      <span>Nearby</span>
-
-      <v-icon>mdi-map-marker</v-icon>
-    </v-btn>
-  </v-bottom-navigation>
+  <v-footer dark padless>
+    <v-card class="flex" flat tile>
+      <v-card-title class="amber darken-4">
+        <strong class="subheading">Tu servicio de carwash delivery</strong>
+        <v-spacer></v-spacer>
+      </v-card-title>
+      <v-card-text class="py-2 white--text text-center">
+        {{ new Date().getFullYear() }} — <strong>Carwash-Home</strong>
+      </v-card-text>
+    </v-card>
+  </v-footer>
 </template>
 <script>
 export default {
-  name: "Footer"
-}
+  data: () => ({
+    icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"]
+  })
+};
 </script>
-<style>
-</style>
